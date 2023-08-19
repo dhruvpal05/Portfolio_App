@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ProfilePic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_margin="10dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/img" />
+
+    <TextView
+        android:id="@+id/Full_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gaara"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ProfilePic" />
+
+    <TextView
+        android:id="@+id/Designation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kazakage of the Sand village"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Full_Name" />
+
+    <Button
+        android:id="@+id/btnSkills"
+        android:layout_width="150dp"
+        android:layout_height="86dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="Skills"
+        app:layout_constraintBottom_toTopOf="@+id/btnWork"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnEducation"
+        android:layout_width="150dp"
+        android:layout_height="86dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:padding="20dp"
+        android:text="Education"
+        app:layout_constraintBottom_toTopOf="@+id/btnAchivements"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnWork"
+        android:layout_width="150dp"
+        android:layout_height="86dp"
+        android:text="Work"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnAchivements"
+        android:layout_width="150dp"
+        android:layout_height="86dp"
+        android:text="Achivements"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
